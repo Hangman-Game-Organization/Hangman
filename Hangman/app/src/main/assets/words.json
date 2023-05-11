@@ -1,0 +1,282 @@
+[
+  {
+    "value": "RED",
+    "category": "COLORS"
+  },
+  {
+    "value": "ORANGE",
+    "category": "COLORS"
+  },
+  {
+    "value": "YELLOW",
+    "category": "COLORS"
+  },
+  {
+    "value": "GREEN",
+    "category": "COLORS"
+  },
+  {
+    "value": "BLUE",
+    "category": "COLORS"
+  },
+  {
+    "value": "PURPLE",
+    "category": "COLORS"
+  },
+  {
+    "value": "PINK",
+    "category": "COLORS"
+  },
+  {
+    "value": "BLACK",
+    "category": "COLORS"
+  },
+  {
+    "value": "WHITE",
+    "category": "COLORS"
+  },
+  {
+    "value": "GRAY",
+    "category": "COLORS"
+  },
+  {
+    "value": "LION",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "TIGER",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "BEAR",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "ELEPHANT",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "GIRAFFE",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "RHINOCEROS",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "HIPPOPOTAMUS",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "ZEBRA",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "KANGAROO",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "PENGUIN",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "WHALE",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "DOLPHIN",
+    "category": "ANIMALS"
+  },
+  {
+    "value": "PIZZA",
+    "category": "FOOD"
+  },
+  {
+    "value": "HAMBURGER",
+    "category": "FOOD"
+  },
+  {
+    "value": "TACO",
+    "category": "FOOD"
+  },
+  {
+    "value": "SPAGHETTI",
+    "category": "FOOD"
+  },
+  {
+    "value": "SUSHI",
+    "category": "FOOD"
+  },
+  {
+    "value": "STEAK",
+    "category": "FOOD"
+  },
+  {
+    "value": "LASAGNA",
+    "category": "FOOD"
+  },
+  {
+    "value": "CHICKEN",
+    "category": "FOOD"
+  },
+  {
+    "value": "SALAD",
+    "category": "FOOD"
+  },
+  {
+    "value": "BURRITO",
+    "category": "FOOD"
+  },
+  {
+    "value": "RICE",
+    "category": "FOOD"
+  },
+  {
+    "value": "OMELETTE",
+    "category": "FOOD"
+  },
+  {
+    "value": "PACMAN",
+    "category": "GAMES"
+  },
+  {
+    "value": "TETRIS",
+    "category": "GAMES"
+  },
+  {
+    "value": "MINECRAFT",
+    "category": "GAMES"
+  },
+  {
+    "value": "ZELDA",
+    "category": "GAMES"
+  },
+  {
+    "value": "PONG",
+    "category": "GAMES"
+  },
+  {
+    "value": "DOOM",
+    "category": "GAMES"
+  },
+  {
+    "value": "POKEMON",
+    "category": "GAMES"
+  },
+  {
+    "value": "SONIC",
+    "category": "GAMES"
+  },
+  {
+    "value": "DIABLO",
+    "category": "GAMES"
+  },
+  {
+    "value": "HALO",
+    "category": "GAMES"
+  },
+  {
+    "value": "FALLOUT",
+    "category": "GAMES"
+  },
+  {
+    "value": "WARCRAFT",
+    "category": "GAMES"
+  },
+  {
+    "value": "FOOTBALL",
+    "category": "SPORTS"
+  },
+  {
+    "value": "BASKETBALL",
+    "category": "SPORTS"
+  },
+  {
+    "value": "BASEBALL",
+    "category": "SPORTS"
+  },
+  {
+    "value": "VOLLEYBALL",
+    "category": "SPORTS"
+  },
+  {
+    "value": "HOCKEY",
+    "category": "SPORTS"
+  },
+  {
+    "value": "TENNIS",
+    "category": "SPORTS"
+  },
+  {
+    "value": "GOLF",
+    "category": "SPORTS"
+  },
+  {
+    "value": "SOCCER",
+    "category": "SPORTS"
+  },
+  {
+    "value": "RUGBY",
+    "category": "SPORTS"
+  },
+  {
+    "value": "CRICKET",
+    "category": "SPORTS"
+  },
+  {
+    "value": "BOXING",
+    "category": "SPORTS"
+  },
+  {
+    "value": "MMA",
+    "category": "SPORTS"
+  },
+  {
+    "value": "HAPPY",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "SAD",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "ANGRY",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "ANXIOUS",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "EXCITED",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "CONTENT",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "FRUSTRATED",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "GRATEFUL",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "HOPEFUL",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "LOVE",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "NOSTALGIC",
+    "category": "EMOTIONS"
+  },
+  {
+    "value": "PEACEFUL",
+    "category": "EMOTIONS"
+  }
+]

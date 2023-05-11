@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Hangman</string>
+    <string name="main_play">Play</string>
+    <string name="main_leaderboard">Leaderboard</string>
+    <string name="name_label">Please type your name</string>
+    <string name="button_ok">OK</string>
+    <string name="txtTries">Tries: %1$d</string>
+    <string name="txtPoints">Points: %1$d</string>
+    <string name="toast_name">Name must not be null</string>
+    <string name="game_won_title">You won!</string>
+    <string name="game_won_message">Congratulations you won!</string>
+    <string name="game_over_title">Game over</string>
+    <string name="game_over_message">Unfortunately you\'ve lost</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

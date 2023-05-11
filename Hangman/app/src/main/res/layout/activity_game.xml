@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameActivity">
+
+    <TextView
+        android:id="@+id/txtTries"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/txtPoints"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/txtTries"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/txtTries"
+        app:layout_constraintEnd_toStartOf="@+id/txtTheme"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="@string/txtPoints"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/txtTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@+id/txtPoints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:id="@+id/letters"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/txtTheme"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardFirstRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/keyboardSecondRow"
+        android:orientation="horizontal"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+        <Button
+            android:id="@+id/btnLetterQ"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="Q"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterW"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="W"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterQ"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterE"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="E"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterW"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterR"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="R"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterE"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterT"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="T"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterR"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterY"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="Y"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterT"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterU"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="U"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterY"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterI"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="I"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterU"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterO"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="O"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterI"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+        <Button
+            android:id="@+id/btnLetterP"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.1"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="P"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterO"
+            app:layout_constraintTop_toBottomOf="@+id/letters" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardSecondRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/keyboardThirdRow"
+        android:orientation="horizontal"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintHorizontal_bias="0.5"
+        >
+        <Button
+            android:id="@+id/btnLetterA"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="A"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toStartOf="parent"/>
+
+        <Button
+            android:id="@+id/btnLetterS"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="S"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterA" />
+
+        <Button
+            android:id="@+id/btnLetterD"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="D"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterS" />
+
+        <Button
+            android:id="@+id/btnLetterF"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="F"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterD" />
+
+        <Button
+            android:id="@+id/btnLetterG"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="G"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterF" />
+
+        <Button
+            android:id="@+id/btnLetterH"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="H"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterG" />
+
+        <Button
+            android:id="@+id/btnLetterJ"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="J"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterH" />
+
+        <Button
+            android:id="@+id/btnLetterK"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="K"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterJ" />
+
+        <Button
+            android:id="@+id/btnLetterL"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:text="L"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterK" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/keyboardThirdRow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:paddingStart="40dp"
+        android:paddingEnd="40dp"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="20dp"
+      >
+
+        <Button
+            android:id="@+id/btnLetterZ"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="Z"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/btnLetterX"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="X"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterA" />
+
+        <Button
+            android:id="@+id/btnLetterC"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="C"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterS" />
+
+        <Button
+            android:id="@+id/btnLetterV"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="V"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterD" />
+
+        <Button
+            android:id="@+id/btnLetterB"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="B"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterF" />
+
+        <Button
+            android:id="@+id/btnLetterN"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="N"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterG" />
+
+        <Button
+            android:id="@+id/btnLetterM"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="0.111"
+            android:padding="0dp"
+            android:text="M"
+            android:onClick="onLetterChosen"
+            app:layout_constraintStart_toEndOf="@+id/btnLetterH" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
